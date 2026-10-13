@@ -18,3 +18,6 @@ def operations_division(a, b):
         return None
     
     return a / b
+
+def new_function():
+    pass
