@@ -15,3 +15,19 @@ def my_funcion_hernan_trullo():
         print(data)
     else:
         print(f"Error al acceder a la API. Código de estado: {response.status_code}")
+
+
+def my_funcion_daniel_ruales():
+    def sumar_matrices(A, B):
+    C = []
+    for i in range(len(A)):
+        fila = []
+        for j in range(len(A[0])):
+            fila.append(A[i][j] + B[i][j])
+        C.append(fila)
+    return C
+
+A = [[1, 2], [3, 4]]
+B = [[5, 6], [7, 8]]
+
+print(sumar_matrices(A, B))
