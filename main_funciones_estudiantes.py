@@ -39,6 +39,20 @@ def main():
 
 
 if __name__ == "__main__":
+    main()
+    
+
+
+def my_funcion_daniel_ruales(a, b):
+    return multiplicar(a, b)
+
+def multiplicar(a, b):
+    resultado = a * b
+    return resultado
+
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+my_funcion_daniel_ruales()
 
 
 #funcion de thomas caclular promedio
