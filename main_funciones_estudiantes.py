@@ -15,3 +15,21 @@ def my_funcion_hernan_trullo():
         print(data)
     else:
         print(f"Error al acceder a la API. Código de estado: {response.status_code}")
+    
+def my_funcion_Andres_Guauña():
+    
+   def operar():
+    try:
+        num1 = float(input("Ingresa el primer número: "))
+        num2 = float(input("Ingresa el segundo número: "))
+
+        if num2 == 0:
+            print("Error: no se puede dividir entre cero.")
+        else:
+            resultado = num1 / num2
+            print("El resultado de la división es:", resultado)
+
+    except ValueError:
+        print("Error: debes ingresar números válidos.")
+
+
