@@ -50,10 +50,6 @@ def multiplicar(a, b):
     resultado = a * b
     return resultado
 
-num1 = int(input("Ingrese el primer número: "))
-num2 = int(input("Ingrese el segundo número: "))
-my_funcion_daniel_ruales()
-
 
 #funcion de thomas caclular promedio
 def my_funcion_thomas():
@@ -67,5 +63,22 @@ def my_funcion_thomas():
         print(f"{nombre}, su promedio es {promedio:.2f}. ¡Felicidades, ha aprobado!")
     else:
         print(f"{nombre}, su promedio es {promedio:.2f}. Lo siento, ha reprobado.")
-            
+    
     print("fin de la funcion")
+    
+        
+def segunda_funcion_de_hernan():
+    """
+        Esta funcion es una funcion de prueba que accede a HTTP y hace un llamado a una API publica, vamos a 
+        trabajar con CURL
+    
+    """
+    url = "https://api.publicapis.org/entries"
+    response = requests.get(url)
+    
+    if response.status_code == 200:
+        data = response.json()
+        print("Datos obtenidos de la API:")
+        print(data)
+    else:
+        print(f"Error al acceder a la API. Código de estado: {response.status_code}")       
